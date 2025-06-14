@@ -1,7 +1,7 @@
 const form = document.querySelector('.login-form');
-form.addEventListener('submit', function(events) {
+form.addEventListener('submit', function (events) {
+    events.preventDefault()
    const {email, password} = form.elements;
-   console.log(email, password);
    const trimedEmail = email.value.trim();
    const trimedPassword = password.value.trim();
    if (trimedEmail === '' || trimedPassword === ''){
